@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #d40511; /* Bundesliga red */
+}
+
+h2 {
+    color: #333;
+}
+
+#predictor-form, #next-matchday, #league-table {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.match-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.match {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a2526; /* Dark background like the image */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.team img {
+    width: 30px;
+    height: 30px;
+}
+
+.score-input {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.score-input input {
+    width: 40px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+
+.score-input input::-webkit-outer-spin-button,
+.score-input input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.score-input button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.score-input button:hover {
+    background-color: #555;
+}
+
+.score-input button.decrement {
+    border-radius: 5px 0 0 5px;
+}
+
+.score-input button.increment {
+    border-radius: 0 5px 5px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #d40511;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Highlight class for table rows */
+tr.highlight {
+    background-color: #bebebe !important; /* Light yellow highlight */
+}
+
+/* Styling for GD column */
+.gd-positive {
+    color: green;
+}
+
+.gd-negative {
+    color: red;
+}
+
+.gd-zero {
+    color: black;
+}

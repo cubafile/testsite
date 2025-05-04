@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bundesliga Table Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bundesliga Table Predictor</h1>
+        <p>Predict the results for Matchday 32 and 33 and see how the table changes!</p>
+    </header>
+    <main>
+        <section id="predictor-form">
+            <h2>Enter Match Predictions (Matchday 32)</h2>
+            <div class="match-container">
+                <div class="match" data-match-id="md32-0">
+                    <div class="team">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/1._FC_Heidenheim_1846.svg/50px-1._FC_Heidenheim_1846.svg.png" alt="Heidenheim">
+                        <span>FCH</span>
+                    </div>
+                    <div class="score-input">
+                        <button type="button" class="decrement">-</button>
+                        <input type="number" min="0" class="home-score" data-match="0" data-matchday="32" value="0" readonly>
+                        <button type="button" class="increment">+</button>
+                    </div>
+                    <div class="score-input">
+                        <button type="button" class="decrement">-</button>
+                        <input type="number" min="0" class="away-score" data-match="0" data-matchday="32" value="0" readonly>
+                        <button type="button" class="increment">+</button>
+                    </div>
+                    <div class="team">
+                        <span>BOC</span>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/VfL_Bochum_logo.svg/50px-VfL_Bochum_logo.svg.png" alt="Bochum">
+                    </div>
+                </div>
+                <div class="match" data-match-id="md32-1">
+                    <div class="team">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/RB_Leipzig_2014_logo.svg/50px-RB_Leipzig_2014_logo.svg.png" alt="Leipzig">
+                        <span>RBL</span>
+                    </div>
+                    <div class="score-input">
+                        <button type="button" class="decrement">-</button>
+                        <input type="number" min="0" class="home-score" data-match="1" data-matchday="32" value="0" readonly>
+                        <button type="button" class="increment">+</button>
+                    </div>
+                    <div class="score-input">
+                        <button type="button" class="decrement">-</button>
+                        <input type="number" min="0" class="away-score" data-match="1" data-matchday="32" value="0" readonly>
+                        <button type="button" class="increment">+</button>
+                    </div>
+                    <div class="team">
+                        <span>FCB</span>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/FC_Bayern_München_Logo_%282016%29.svg/50px-FC_Bayern_München_Logo_%282016%29.svg.png" alt="Bayern">
+                    </div>
+                </div>
+                <div class="match" data-match-id="md32-2">
+                    <div class="team">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Logo_Mönchengladbach.svg/50px-Logo_Mönchengladbach.svg.png" alt="M'gladbach">
+                        <span>BMG</span>
+                    </div>
+                    <div class="score-input">
+                        <button type="button" class="decrement">-</button>
+                        <input type="number" min="0" class="home-score" data-match="2" data-matchday="32" value="0" readonly>
+                        <button type="button" class="increment">+</button>
+                    </div>
+                    <div class="score-input">
+                        <button type="button" class="decrement">-</button>
+                        <input type="number" min="0" class="away-score" data-match="2" data-matchday="32" value="0" readonly>
+                        <button type="button" class="increment">+</button>
+                    </div>
+                    <div class="team">
+                        <span>TSG</span>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/1899_Hoffenheim_Logo.svg/50px-1899_Hoffenheim_Logo.svg.png" alt="Hoffenheim">
+                    </div>
+                </div>
+                <div class="match" data-match-id="md32-3">
+                    <div class="team">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/FC_Union_Berlin_Logo.svg/50px-FC_Union_Berlin_Logo.svg.png" alt="Union Berlin">
+                        <span>FCU</span>
+                    </div>
+                    <div class="score-input">
+                        <button type="button" class="decrement">-</button>
+                        <input type="number" min="0" class="home-score" data-match="3" data-matchday="32" value="0" readonly>
+                        <button type="button" class="increment">+</button>
+                    </div>
+                    <div class="score-input">
+                        <button type="button" class="decrement">-</button>
+                        <input type="number" min="0" class="away-score" data-match="3" data-matchday="32" value="0" readonly>
+                        <button type="button" class="increment">+</button>
+                    </div>
+                    <div class="team">
+                        <span>SVW</span>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/SV_Werder_Bremen_Logo.svg/50px-SV_Werder_Bremen_Logo.svg.png" alt="Bremen">
+                    </div>
+                </div>
+                <div class="match" data-match-id="md32-4">
+                    <div class="team">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/FC_St._Pauli_Logo.svg/50px-FC_St._Pauli_Logo.svg.png" alt="St. Pauli">
+                        <span>STP</span>
+                    </div>
+                    <div class="score-input">
+                        <button type="button" class="decrement">-</button>
+                        <input type="number" min="0" class="home-score" data-match="4" data-matchday="32" value="0" readonly>
+                        <button type="button" class="increment">+</button>
+                    </div>
+                    <div class="score-input">
+                        <button type="button" class="decrement">-</button>
+                        <input type="number" min="0" class="away-score" data-match="4" data-matchday="32" value="0" readonly>
+                        <button type="button" class="increment">+</button>
+                    </div>
+                    <div class="team">
+                        <span>VFB</span>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/VfB_Stuttgart_1893_Logo.svg/50px-VfB_Stuttgart_1893_Logo.svg.png" alt="Stuttgart">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="next-matchday">
+            <h2>Enter Match Predictions (Matchday 33)</h2>
+            <div class="match-container">
+                <div class="match" data-match-id="md33-0">
+                    <div class="team">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/FC_Bayern_München_Logo_%282016%29.svg/50px-FC_Bayern_München_Logo_%282016%29.svg.png" alt="Bayern">
+                        <span>FCB</span>
+                    </div>
+                    <div class="score-input">
+                        <button type="button" class="decrement">-</button>
+                        <input type="number" min="0" class="home-score" data-match="0" data-matchday="33" value="0" readonly>
+                        <button type="button" class="increment">+</button>
+                    </div>
+                    <div class="score-input">
+                        <button type="button" class="decrement">-</button>
+                        <input type="number" min="0" class="away-score" data-match="0" data-matchday="33" value="0" readonly>
+                        <button type="button" class="increment">+</button>
+                    </div>
+                    <div class="team">
+                        <span>FCU</span>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/FC_Union_Berlin_Logo.svg/50px-FC_Union_Berlin_Logo.svg.png" alt="Union Berlin">
+                    </div>
+                </div>
+                <div class="match" data-match-id="md33-1">
+                    <div class="team">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/SV_Werder_Bremen_Logo.svg/50px-SV_Werder_Bremen_Logo.svg.png" alt="Bremen">
+                        <span>SVW</span>
+                    </div>
+                    <div class="score-input">
+                        <button type="button" class="decrement">-</button>
+                        <input type="number" min="0" class="home-score" data-match="1" data-matchday="33" value="0" readonly>
+                        <button type="button" class="increment">+</button>
+                    </div>
+                    <div class="score-input">
+                        <button type="button" class="decrement">-</button>
+                        <input type="number" min="0" class="away-score" data-match="1" data-matchday="33" value="0" readonly>
+                        <button type="button" class="increment">+</button>
+                    </div>
+                    <div class="team">
+                        <span>STP</span>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/FC_St._Pauli_Logo.svg/50px-FC_St._Pauli_Logo.svg.png" alt="St. Pauli">
+                    </div>
+                </div>
+                <div class="match" data-match-id="md33-2">
+                    <div class="team">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/VfB_Stuttgart_1893_Logo.svg/50px-VfB_Stuttgart_1893_Logo.svg.png" alt="Stuttgart">
+                        <span>VFB</span>
+                    </div>
+                    <div class="score-input">
+                        <button type="button" class="decrement">-</button>
+                        <input type="number" min="0" class="home-score" data-match="2" data-matchday="33" value="0" readonly>
+                        <button type="button" class="increment">+</button>
+                    </div>
+                    <div class="score-input">
+                        <button type="button" class="decrement">-</button>
+                        <input type="number" min="0" class="away-score" data-match="2" data-matchday="33" value="0" readonly>
+                        <button type="button" class="increment">+</button>
+                    </div>
+                    <div class="team">
+                        <span>RBL</span>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/RB_Leipzig_2014_logo.svg/50px-RB_Leipzig_2014_logo.svg.png" alt="Leipzig">
+                    </div>
+                </div>
+                <div class="match" data-match-id="md33-3">
+                    <div class="team">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/1899_Hoffenheim_Logo.svg/50px-1899_Hoffenheim_Logo.svg.png" alt="Hoffenheim">
+                        <span>TSG</span>
+                    </div>
+                    <div class="score-input">
+                        <button type="button" class="decrement">-</button>
+                        <input type="number" min="0" class="home-score" data-match="3" data-matchday="33" value="0" readonly>
+                        <button type="button" class="increment">+</button>
+                    </div>
+                    <div class="score-input">
+                        <button type="button" class="decrement">-</button>
+                        <input type="number" min="0" class="away-score" data-match="3" data-matchday="33" value="0" readonly>
+                        <button type="button" class="increment">+</button>
+                    </div>
+                    <div class="team">
+                        <span>FCH</span>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/1._FC_Heidenheim_1846.svg/50px-1._FC_Heidenheim_1846.svg.png" alt="Heidenheim">
+                    </div>
+                </div>
+                <div class="match" data-match-id="md33-4">
+                    <div class="team">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/VfL_Bochum_logo.svg/50px-VfL_Bochum_logo.svg.png" alt="Bochum">
+                        <span>BOC</span>
+                    </div>
+                    <div class="score-input">
+                        <button type="button" class="decrement">-</button>
+                        <input type="number" min="0" class="home-score" data-match="4" data-matchday="33" value="0" readonly>
+                        <button type="button" class="increment">+</button>
+                    </div>
+                    <div class="score-input">
+                        <button type="button" class="decrement">-</button>
+                        <input type="number" min="0" class="away-score" data-match="4" data-matchday="33" value="0" readonly>
+                        <button type="button" class="increment">+</button>
+                    </div>
+                    <div class="team">
+                        <span>BMG</span>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Logo_Mönchengladbach.svg/50px-Logo_Mönchengladbach.svg.png" alt="M'gladbach">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="league-table">
+            <h2>Predicted Bundesliga Table (After Matchday 33)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pos</th>
+                        <th>Team</th>
+                        <th>P</th>
+                        <th>W</th>
+                        <th>D</th>
+                        <th>L</th>
+                        <th>Goals</th>
+                        <th>GD</th>
+                        <th>Pts</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!-- Table rows will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
